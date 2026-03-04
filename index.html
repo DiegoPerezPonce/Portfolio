@@ -8,7 +8,6 @@
         content="Portfolio profesional de Diego Augusto - Full Stack Web Developer especializado en PHP, Laravel y desarrollo backend">
     <title>Diego Augusto Pérez Ponce - Full Stack Web Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Fuente moderna de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,13 +15,19 @@
 
 <body>
 
-    <!-- ========================================
-         NAVEGACIÓN
-         ======================================== -->
+
+    <!-- Overlay que cubre el fondo cuando el menú lateral está abierto -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">DA</div>
-            <ul class="nav-menu">
+            <!-- Botón hamburguesa para móvil -->
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
                 <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -32,17 +37,14 @@
         </div>
     </nav>
 
-    <!-- ========================================
-         SECCIÓN HERO (INICIO)
-         ======================================== -->
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <!-- EDITAR NOMBRE AQUÍ -->
+
                 <h1 class="hero-title">Diego Augusto Pérez Ponce</h1>
                 <h2 class="hero-subtitle">Full Stack Web Developer</h2>
 
-                <!-- EDITAR SUBTÍTULO PROFESIONAL AQUÍ -->
+
                 <p class="hero-description">
                     Desarrollo aplicaciones web escalables combinando backend sólido, bases de datos estructuradas y
                     frontend funcional, siguiendo principios de arquitectura limpia y buenas prácticas de desarrollo.
@@ -56,14 +58,10 @@
         </div>
     </section>
 
-    <!-- ========================================
-         SECCIÓN SOBRE MÍ
-         ======================================== -->
     <section id="sobre-mi" class="about">
         <div class="container">
             <h2 class="section-title">Sobre mí</h2>
 
-            <!-- EDITAR DESCRIPCIÓN PROFESIONAL AQUÍ -->
             <div class="about-content">
                 <p class="about-text">
                     Me especializo en la creación de aplicaciones web completas, trabajando
@@ -82,21 +80,17 @@
         </div>
     </section>
 
-    <!-- ========================================
-         SECCIÓN SKILLS (HABILIDADES)
-         ======================================== -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Skills</h2>
 
-            <!-- Grid de tarjetas de habilidades -->
             <div class="skills-grid">
 
-                <!-- Tarjeta: Backend -->
+
                 <div class="skill-card">
                     <div class="skill-icon">⚙️</div>
                     <h3 class="skill-title">Backend</h3>
-                    <!-- EDITAR TECNOLOGÍAS BACKEND AQUÍ -->
+
                     <ul class="skill-list">
                         <li>PHP</li>
                         <li>Laravel</li>
@@ -105,11 +99,10 @@
                     </ul>
                 </div>
 
-                <!-- Tarjeta: Frontend -->
                 <div class="skill-card">
                     <div class="skill-icon">🎨</div>
                     <h3 class="skill-title">Frontend</h3>
-                    <!-- EDITAR TECNOLOGÍAS FRONTEND AQUÍ -->
+
                     <ul class="skill-list">
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -118,11 +111,10 @@
                     </ul>
                 </div>
 
-                <!-- Tarjeta: Bases de datos -->
                 <div class="skill-card">
                     <div class="skill-icon">💾</div>
                     <h3 class="skill-title">Bases de datos</h3>
-                    <!-- EDITAR BASES DE DATOS AQUÍ -->
+
                     <ul class="skill-list">
                         <li>MySQL</li>
                         <li>PostgreSQL</li>
@@ -131,11 +123,11 @@
                     </ul>
                 </div>
 
-                <!-- Tarjeta: Herramientas -->
+
                 <div class="skill-card">
                     <div class="skill-icon">🛠️</div>
                     <h3 class="skill-title">Herramientas</h3>
-                    <!-- EDITAR HERRAMIENTAS AQUÍ -->
+
                     <ul class="skill-list">
                         <li>Git & GitHub</li>
                         <li>Composer</li>
@@ -148,29 +140,23 @@
         </div>
     </section>
 
-    <!-- ========================================
-         SECCIÓN PROYECTOS
-         ======================================== -->
     <section id="proyectos" class="projects">
         <div class="container">
             <h2 class="section-title">Proyectos</h2>
 
-            <!-- Grid de proyectos -->
             <div class="projects-grid">
 
                 <!-- PROYECTO 1 -->
                 <div class="project-card">
-                    <!-- EDITAR TÍTULO DEL PROYECTO AQUÍ -->
+
                     <h3 class="project-title">Sistema de Gestión de Enfermería</h3>
 
-                    <!-- EDITAR DESCRIPCIÓN DEL PROYECTO AQUÍ -->
                     <p class="project-description">
                         Aplicación web completa para la gestión de personal de enfermería,
                         con sistema de registro, autenticación y administración de perfiles con Base de Datos en la
                         nube.
                     </p>
 
-                    <!-- EDITAR TECNOLOGÍAS USADAS AQUÍ -->
                     <div class="project-tech">
                         <span class="tech-badge">Angular</span>
                         <span class="tech-badge">Symfony</span>
@@ -178,9 +164,6 @@
                         <span class="tech-badge">TypeScript</span>
                     </div>
 
-                    <!-- VIDEO DE YOUTUBE -->
-                    <!-- PEGAR ENLACE DE VIDEO YOUTUBE AQUÍ -->
-                    <!-- Formato: https://www.youtube.com/embed/ID_DEL_VIDEO -->
                     <div class="project-video">
                         <iframe src="https://www.youtube.com/embed/szusaCP3lA0" title="Demo del proyecto"
                             frameborder="0"
@@ -192,16 +175,14 @@
 
                 <!-- PROYECTO 2 -->
                 <div class="project-card">
-                    <!-- EDITAR TÍTULO DEL PROYECTO AQUÍ -->
+
                     <h3 class="project-title">Catálogo de Películas</h3>
 
-                    <!-- EDITAR DESCRIPCIÓN DEL PROYECTO AQUÍ -->
                     <p class="project-description">
                         Plataforma en Laravel para visualizar y gestionar un catálogo de películas
                         con diseño responsive y conexión a base de datos.
                     </p>
 
-                    <!-- EDITAR TECNOLOGÍAS USADAS AQUÍ -->
                     <div class="project-tech">
                         <span class="tech-badge">Laravel</span>
                         <span class="tech-badge">Blade</span>
@@ -209,9 +190,6 @@
                         <span class="tech-badge">Bootstrap</span>
                     </div>
 
-                    <!-- VIDEO DE YOUTUBE -->
-                    <!-- PEGAR ENLACE DE VIDEO YOUTUBE AQUÍ -->
-                    <!-- Formato: https://www.youtube.com/embed/ID_DEL_VIDEO -->
                     <div class="project-video">
                         <iframe src="https://www.youtube.com/embed/1oBu42WhKYE" title="Demo del proyecto"
                             frameborder="0"
@@ -223,25 +201,20 @@
 
                 <!-- PROYECTO 3 -->
                 <div class="project-card">
-                    <!-- EDITAR TÍTULO DEL PROYECTO AQUÍ -->
+
                     <h3 class="project-title">Reproductor de Audio Web</h3>
 
-                    <!-- EDITAR DESCRIPCIÓN DEL PROYECTO AQUÍ -->
                     <p class="project-description">
                         Reproductor de audio personalizado con interfaz moderna,
                         controles de reproducción y gestión de playlist.
                     </p>
 
-                    <!-- EDITAR TECNOLOGÍAS USADAS AQUÍ -->
                     <div class="project-tech">
                         <span class="tech-badge">HTML5</span>
                         <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
 
-                    <!-- VIDEO DE YOUTUBE -->
-                    <!-- PEGAR ENLACE DE VIDEO YOUTUBE AQUÍ -->
-                    <!-- Formato: https://www.youtube.com/embed/ID_DEL_VIDEO -->
                     <div class="project-video">
                         <iframe src="https://www.youtube.com/embed/veFIahPv-ME" title="Demo del proyecto"
                             frameborder="0"
@@ -253,23 +226,20 @@
 
                 <!-- PROYECTO 4 -->
                 <div class="project-card">
-                    <!-- EDITAR TÍTULO DEL PROYECTO AQUÍ -->
+
                     <h3 class="project-title">Gestion control de gastos</h3>
 
-                    <!-- EDITAR DESCRIPCIÓN DEL PROYECTO AQUÍ -->
+
                     <p class="project-description">
                         App para el control de gastos en PowerApps, conectado a una base de datos en SharePoint.
                     </p>
 
-                    <!-- EDITAR TECNOLOGÍAS USADAS AQUÍ -->
+
                     <div class="project-tech">
                         <span class="tech-badge">PowerApps</span>
                         <span class="tech-badge">SharePoint</span>
                     </div>
 
-                    <!-- VIDEO DE YOUTUBE -->
-                    <!-- PEGAR ENLACE DE VIDEO YOUTUBE AQUÍ -->
-                    <!-- Formato: https://www.youtube.com/embed/ID_DEL_VIDEO -->
                     <div class="project-video">
                         <iframe src="https://www.youtube.com/embed/M3PnRFZ6zNw" title="Demo del proyecto"
                             frameborder="0"
@@ -279,6 +249,146 @@
                     </div>
                 </div>
 
+                <!-- PROYECTO 5 -->
+                <div class="project-card">
+
+                    <h3 class="project-title">Juego naves Multi-Cam</h3>
+
+                    <p class="project-description">
+                        Aplicación web completa para la gestión de personal de enfermería,
+                        con sistema de registro, autenticación y administración de perfiles con Base de Datos en la
+                        nube.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Symfony</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">TypeScript</span>
+                    </div>
+
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/mA4PRypCuoc" title="Demo del proyecto"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 6 -->
+                <div class="project-card">
+
+                    <h3 class="project-title">Editor de Escenarios</h3>
+
+                    <p class="project-description">
+                        Aplicación web completa para la gestión de personal de enfermería,
+                        con sistema de registro, autenticación y administración de perfiles con Base de Datos en la
+                        nube.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">MySQL</span>
+                        
+                    </div>
+                    mA4PRypCuoc
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/dgd4zG5AP6A" title="Demo del proyecto"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 7 -->
+                <div class="project-card">
+
+                    <h3 class="project-title">Juego estilo Shoot'em up</h3>
+
+                    <p class="project-description">
+                        Aplicación web completa para la gestión de personal de enfermería,
+                        con sistema de registro, autenticación y administración de perfiles con Base de Datos en la
+                        nube.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">MySQL</span>
+                
+                    </div>
+
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/I4N74LELDmE" title="Demo del proyecto"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 8 -->
+                <div class="project-card">
+
+                    <h3 class="project-title">Juego Servidor Online</h3>
+
+                    <p class="project-description">
+                        Aplicación web completa para la gestión de personal de enfermería,
+                        con sistema de registro, autenticación y administración de perfiles con Base de Datos en la
+                        nube.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">Photon</span>
+                        
+                    </div>
+
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/hZhasHGRGXU" title="Demo del proyecto"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 9 -->
+                <div class="project-card">
+
+                    <h3 class="project-title">Tablas Multiplicar</h3>
+
+                    <p class="project-description">
+                        Aplicación web completa para la gestión de personal de enfermería,
+                        con sistema de registro, autenticación y administración de perfiles con Base de Datos en la
+                        nube.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/luWTJ3rUXxg" title="Demo del proyecto"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+
+
+
+
+
             </div>
         </div>
     </section>
@@ -286,17 +396,17 @@
     <!-- ========================================
          SECCIÓN CONTACTO
          ======================================== -->
-    <!-- <section id="contacto" class="contact">
+    <section id="contacto" class="contact">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
 
             <div class="contact-content">
                 <p class="contact-intro">
                     ¿Tienes un proyecto en mente? Me encantaría saber más sobre él.
-                </p> -->
+                </p>
 
                 <!-- FORMULARIO DE CONTACTO -->
-                <!-- <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm">
 
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
@@ -304,9 +414,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label> -->
+                        <label for="email">Email</label>
                         <!-- EDITAR EMAIL DE CONTACTO AQUÍ (en el atributo placeholder o en script.js) -->
-                        <!-- <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+                        <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
                     </div>
 
                     <div class="form-group">
@@ -319,15 +429,13 @@
                 </form>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- ========================================
-         FOOTER
-         ======================================== -->
+
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Diego Augusto Pérez Ponce. Todos los derechos reservados.</p>
-            <!-- EDITAR ENLACES DE REDES SOCIALES AQUÍ -->
+
             <div class="social-links">
                 <a href="https://github.com/DiegoPerezPonce" target="_blank" class="social-link">GitHub</a>
                 <a href="https://linkedin.com/in/diegoperezponce" target="_blank" class="social-link">LinkedIn</a>
@@ -335,7 +443,6 @@
         </div>
     </footer>
 
-    <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
 
