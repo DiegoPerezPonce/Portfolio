@@ -843,6 +843,14 @@ html {
     border-color: var(--color-accent);
 }
 
+.probar{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 1.5rem; 
+    padding-bottom: 1rem;
+}
+
+
 /* ========================================
    RESPONSIVE DESIGN
    ======================================== */
@@ -873,6 +881,7 @@ html {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
 
 /* Móviles */
 @media (max-width: 480px) {
